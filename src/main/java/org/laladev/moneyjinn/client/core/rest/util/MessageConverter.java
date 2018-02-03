@@ -27,19 +27,18 @@
 //
 package org.laladev.moneyjinn.client.core.rest.util;
 
+import com.fasterxml.jackson.databind.JavaType;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.io.IOException;
 import java.lang.reflect.Type;
 
 import org.apache.commons.io.IOUtils;
 import org.laladev.moneyjinn.core.rest.model.AbstractResponse;
 import org.laladev.moneyjinn.core.rest.model.ErrorResponse;
-import org.laladev.moneyjinn.core.rest.util.MyObjectMapper;
 import org.springframework.http.HttpInputMessage;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
-
-import com.fasterxml.jackson.databind.JavaType;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class MessageConverter extends MappingJackson2HttpMessageConverter {
 
